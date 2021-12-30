@@ -38,6 +38,7 @@ $(function(){
         infinite: false,
         arrows:false,
         dots:true,
+        speed: 300,
         slidesToShow: 3,
         slidesToScroll: 2
     });

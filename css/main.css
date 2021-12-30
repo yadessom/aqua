@@ -224,17 +224,12 @@ body.on, html.on{
     margin: 0 auto;
     overflow: hidden;
     display: flex;
-    /* flex-wrap: wrap; */
 }
 .sec_01 ul li{
-    /* width: 240px; */
     width: calc(100% / 3);
     height: 70px;
-    /* padding: 15px 50px; */
     padding: 15px 0;
     box-sizing: border-box;
-    /* display: flex;
-    justify-content: space-between; */
     position: relative;
 
 }
@@ -364,12 +359,14 @@ body.on, html.on{
 }
 /* ************************************************ */
 .sec_03_slide{
-    margin: 0 auto;
-    width: 435px;
+    /* margin: 0 auto; */
+    /* width: 435px; */
+    transform: scale(.9);
 }
+
 .sec_03_slide a{
     display: block;
-    width: 145px;
+    width: 100%;
     height: 150px;
     box-sizing: border-box;
     border:1px solid #dedede;
@@ -392,7 +389,7 @@ body.on, html.on{
 }
 .sec_03_slide .slick-dots button{
     border:1px solid #4292ba;
-    border-radius: 100px;
+    border-radius: 100%;
     width: 14px;
     height: 14px;
     text-indent: -99999px;
