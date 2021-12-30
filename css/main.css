@@ -224,15 +224,19 @@ body.on, html.on{
     margin: 0 auto;
     overflow: hidden;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 .sec_01 ul li{
-    width: 240px;
+    /* width: 240px; */
+    width: calc(100% / 3);
     height: 70px;
-    padding: 15px 50px;
+    /* padding: 15px 50px; */
+    padding: 15px 0;
     box-sizing: border-box;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     position: relative;
+
 }
 .sec_01 ul li::before{
     content: '';
@@ -252,6 +256,10 @@ body.on, html.on{
     text-align: center;
     display: flex;
     align-items: center;
+    display: inline-block block;
+    width: 140px;
+    margin: 0 auto;
+    transform: scale(.8);
 }
 .sec_01 img{
     float:left;
@@ -336,6 +344,7 @@ body.on, html.on{
     width: 100%;
     padding: 65px 0 45px;
     text-align: center;
+    overflow: hidden;
 }
 .sec_03 h3{
     font-size: 16px;
@@ -450,6 +459,7 @@ body.on, html.on{
     width: 185px;
     display: flex;
     justify-content: space-between;
+    margin-right: 15px;
 }
 .footer_04 ul li img{
     width: 20px;
