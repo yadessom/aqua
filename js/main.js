@@ -5,6 +5,8 @@ $(function(){
         $('.m_menu').toggleClass('on');
         $('.full_menu').toggleClass('on');
         $('body,html').toggleClass('on');
+        $('.full_list li a').removeClass('on');
+        $('.depth2').stop().slideUp()
     });    
     // *****************************************
     $('.full_list li').click(function(){
