@@ -383,7 +383,7 @@ body.on, html.on{
 }
 .sec_03_slide .slick-dots button{
     border:1px solid #4292ba;
-    border-radius: 100%;
+    border-radius: 100px;
     width: 14px;
     height: 14px;
     text-indent: -99999px;
