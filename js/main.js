@@ -43,8 +43,21 @@ $(function(){
         slidesToScroll: 2
     });
     // **********************************************
+    let sw = 0;
     $('.quick_radius').click(function(){
-        $(this).find('span').toggleClass('on');
+
+        if(sw == 0){
+            $(this).addClass('on');
+            $('.quick_back').addClass('on');
+            sw = 1;
+        }else{
+            $(this).removeClass('on');
+            $('.quick_back').removeClass('on');
+            $('.quick_back ul li a img').hide();
+            
+            $('.quick_back ul li a img').show(100);
+            sw=0;
+        }
     });
 
 
