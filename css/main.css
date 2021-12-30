@@ -138,6 +138,14 @@ body.on, html.on{
 .header h1{
     display: inline-block;
 }
+.header.on{
+    position: fixed;
+    left: 0; top: 0;
+    background: rgba(0,0,0,.4);
+    border-bottom: 1px solid #fff;
+    z-index: 999;
+
+}
 /* -----------------------Mobile Button----------------- */
 .m_btn{
     width: 30px;

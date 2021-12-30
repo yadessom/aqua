@@ -1,5 +1,5 @@
 $(function(){
-
+    // **********************************************
     $('.m_btn').click(function(){
         $('.line').toggleClass('on');
         $('.m_menu').toggleClass('on');
@@ -7,7 +7,18 @@ $(function(){
         $('body,html').toggleClass('on');
         $('.full_list li a').removeClass('on');
         $('.depth2').stop().slideUp()
-    });    
+    });
+    // **********************************************
+    $(window).scroll(function(){
+        var window =$(document).scrollTop();
+        console.log("위치="+window);
+
+        if(window > 200){
+            $('.header').addClass('on');
+        }else{
+            $('.header').removeClass('on');
+        }
+    });
     // *****************************************
     $('.full_list li').click(function(){
         $('.full_list li a').removeClass('on');
