@@ -146,7 +146,7 @@ body.on, html.on{
     left: 0; top: 0;
     background: rgba(0,0,0,.4);
     border-bottom: 1px solid #fff;
-    z-index: 999;
+    z-index: 99;
 
 }
 /* -----------------------Mobile Button----------------- */
@@ -157,7 +157,7 @@ body.on, html.on{
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 99;
+    z-index: 1000;
 }
 .m_btn .line{
     display: block;
@@ -360,8 +360,6 @@ body.on, html.on{
 }
 /* ************************************************ */
 .sec_03_slide{
-    /* margin: 0 auto; */
-    /* width: 435px; */
     transform: scale(.9);
 }
 
@@ -506,8 +504,12 @@ body.on, html.on{
     transition: all 0.3s ease;
 }
 .quick_radius span.on::before{
-    transform: rotate(365deg);
+    transform: rotate(45deg);
+    left: -1px;
+    top: -8px;
 }
 .quick_radius span.on::after{
-    transform: rotate(-365deg);
+    transform: rotate(-45deg);
+    left: -1px;
+    top: -8px;
 }
